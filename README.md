@@ -40,14 +40,7 @@ curl -L http://st.vearne.cc/2h7
 ```
 也可以直接在浏览器中测试
 
-```seq
-Title: sequence chart
-client->tinyurl service:  [request] st.vearne.cc/2h7
-tinyurl service-->client: [302]   Location: https://github.com/vearne/tinyurl
-
-client->target: [request] https://github.com/vearne/tinyurl
-target-->client: [response] content ...
-```
+![seq chart](https://raw.githubusercontent.com/vearne/tinyurl/master/seq.png)
 
 ### 3. 生产环境
 #### 3.1 编译
