@@ -55,7 +55,7 @@ go build -ldflags "-s -w" -o tinyurl
 ```
 
 ### 4. Thanks
-The project inspired by  [国内有哪些靠谱的短链接服务？](https://www.zhihu.com/question/20188969)的启发。
+The project inspired by  [国内有哪些靠谱的短链接服务？](https://www.zhihu.com/question/20188969) 
 
 
 
