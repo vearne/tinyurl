@@ -53,7 +53,7 @@ go build -o tinyurl -ldflags -s
 ```
 
 ### 4. 感谢
-代码实现受到了知乎 [国内有哪些靠谱的短链接服务？](https://www.zhihu.com/question/20188969)的启发。
+代码实现受到了 [国内有哪些靠谱的短链接服务？](https://www.zhihu.com/question/20188969)的启发。
 
 ### 参考资料
 1. [国内有哪些靠谱的短链接服务？](https://www.zhihu.com/question/20188969)
