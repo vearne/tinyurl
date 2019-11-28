@@ -1,0 +1,10 @@
+CREATE database tinyurl;
+USE tinyurl;
+CREATE TABLE `tinyurl` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `url` varchar(255) DEFAULT NULL COMMENT 'URL',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=utf8;
+
+

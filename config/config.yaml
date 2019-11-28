@@ -1,0 +1,23 @@
+#Please replace it with your own domain.
+domain: "http://example.com/"
+
+web:
+  mode: "debug"
+  listen_address: ":8080"
+
+logger:
+  # 1. "info"
+  # 2. "debug"
+  # 3. "error"
+  level: "debug"
+  filepath: "/var/log/tinyurl.log"
+
+mysql:
+  #Please replace it with your own mysql address.
+  dsn: "tinyurl_user:1pxIEuqHeQ8hFE@tcp(dev1:3306)/tinyurl?charset=utf8&loc=Asia%2FShanghai&parseTime=true"
+  max_idle_conn: 50
+  max_open_conn: 100
+  conn_max_life_secs: 600
+  # Whether to start debug mode
+  # If on, the specific execution SQL is printed
+  debug: true
