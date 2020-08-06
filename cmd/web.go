@@ -50,7 +50,7 @@ func runWeb(cmd *cobra.Command, args []string) {
 	}()
 
 	// ------------- run ---------------------
-	mode := viper.GetString("TV_RUN_MODE")
+	mode := viper.GetString("RUN_MODE")
 	if mode != "dev" {
 		gin.SetMode(gin.ReleaseMode)
 		gin.DefaultWriter = ioutil.Discard

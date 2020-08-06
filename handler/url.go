@@ -47,19 +47,21 @@ func UrlGet(c *gin.Context) {
 }
 
 func getUrl(sid string) (string, error) {
-	value, err := libs.Base62ToUint(sid)
+	key, err := libs.Base62ToUint(sid)
 	if err != nil {
 		return "", err
 	}
 	// 尝试从cache中获取
-	res := resource.FixedCache.Get(value)
+	res := resource.FixedCache.Get(key)
+	zlog.Debug("FixedCache.Get", zap.Uint64("key", key), zap.Any("url", res))
 	if res != nil {
 		return res.(string), nil
 	}
 	// 尝试从数据库中获取
-	url := dao.GetURL(value)
+	url := dao.GetURL(key)
 	if len(url) > 0 {
-		resource.FixedCache.Set(value, url, -1)
+		// it does not expire
+		resource.FixedCache.Set(key, url, 0)
 		return url, nil
 	}
 
