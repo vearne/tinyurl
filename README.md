@@ -40,7 +40,7 @@ curl -XPOST http://localhost:8080/api/tinyurl -d '{"url":"http://vearne.cc/archi
 curl -iv http://st.vearne.cc/2h7
 curl -L http://st.vearne.cc/2h7
 ```
-You can also test directly in a browse.
+You can also test directly in a browser.
 
 ![seq chart](https://raw.githubusercontent.com/vearne/tinyurl/master/seq.png)
 
